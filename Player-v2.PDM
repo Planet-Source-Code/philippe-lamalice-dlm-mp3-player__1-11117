@@ -1,0 +1,124 @@
+[Root]
+Most Recent Package=DLM Setup Package
+Most Recent Deploy=Web Deployment 1
+
+
+[Package|DLM Setup Package|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Program Files\DevStudio\VB\Package
+
+[Package|DLM Setup Package|Configure DAO ISAMs]
+Applicable=No
+
+[Package|DLM Setup Package|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|DLM Setup Package|Files Found]
+
+[Package|DLM Setup Package|Files Released]
+DLMPATH.INI=
+dlmcol.ini=
+
+[Package|DLM Setup Package|Missing Dependency Information]
+C:\WINDOWS\SYSTEM\msdxm.ocx=
+C:\PROJECT\VB\Exp\newex.ocx=
+C:\WINDOWS\SYSTEM\newex.ocx=
+
+[Package|DLM Setup Package|Out-of-Date Dependency Information]
+C:\WINDOWS\SYSTEM\COMDLG32.OCX=
+
+[Package|DLM Setup Package|Files Added]
+
+[Package|DLM Setup Package|Files Removed]
+c:\windows\dlmpath.ini=
+c:\windows\dlmcol.ini=
+
+[Package|DLM Setup Package|Files In Project]
+C:\WINDOWS\DLMPLAY.EXE=Yes
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=Yes
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=Yes
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\SYSTEM\COMCTL32.OCX=Yes
+C:\WINDOWS\SYSTEM\msdxm.ocx=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=Yes
+C:\WINDOWS\SYSTEM\COMDLG32.OCX=Yes
+C:\WINDOWS\SYSTEM\newex.ocx=Yes
+
+[Package|DLM Setup Package|Configure Registry Files]
+Applicable=No
+
+[Package|DLM Setup Package|Configure Remote Servers]
+Applicable=No
+
+[Package|DLM Setup Package|Install Locations]
+C:\WINDOWS\DLMPLAY.EXE=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\COMCTL32.OCX=$(WinSysPath)
+C:\PROJECT\VB\Exp\newex.ocx=$(WinSysPath)
+C:\WINDOWS\SYSTEM\msdxm.ocx=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\COMDLG32.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\newex.ocx=$(WinSysPath)
+
+[Package|DLM Setup Package|Configure Shared Files]
+Applicable=Yes
+C:\WINDOWS\DLMPLAY.EXE=No
+
+[Package|DLM Setup Package|Distribution]
+Type=single
+Size=
+Title=DLM MP3 Player
+
+[Package|DLM Setup Package|Package]
+PackageFolder=C:\Program Files\DevStudio\VB\Package
+ProjectFolder=C:\Program Files\DevStudio\VB
+ServerSideCab=
+File1=C:\Program Files\DevStudio\VB\Package\setup.exe
+File2=C:\Program Files\DevStudio\VB\Package\Setup.Lst
+File3=C:\Program Files\DevStudio\VB\Package\DLMPLAY.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|DLM Setup Package|IconGroups]
+Group0=DLM
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|DLM Setup Package|DLM]
+Icon1=DLMPLAY.exe
+Title1=DLM MP3 Player
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Deploy|Web Deployment 1|Root]
+Package=DLM Setup Package
+Handler=PDWizard.WebPostDplySubWiz
+
+[Deploy|Web Deployment 1|Package Files]
+C:\Program Files\DevStudio\VB\Package\setup.exe=Yes
+C:\Program Files\DevStudio\VB\Package\SETUP.LST=Yes
+C:\Program Files\DevStudio\VB\Package\DLMPLAY.CAB=Yes
+
+[Deploy|Web Deployment 1|Other Files and Folders]
+
+[Deploy|Web Deployment 1|WebPost Site]
+URL=ftp://www3.sympatico.ca
+Provider={02B5E1D1-8B7C-11D0-AD45-00AA00A219AA}
+Explode=No
